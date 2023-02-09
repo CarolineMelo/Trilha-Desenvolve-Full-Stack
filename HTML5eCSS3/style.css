@@ -1,55 +1,100 @@
 body{
-    background: #000000;
+    background: rgb(255, 254, 254);
 }
-#banner {
-    width: 100%;
+header{
+    background:rgb(0, 0, 0);
+    padding: 20px 0;
 }
-.principal{
-    background: #CCCCCC;
-    padding: 30px;
-}
-
-.titulo-principal {
-	padding-left: 20px;
-    color: rgb(255, 255, 255);
-}
-
-.titulo-centralizado {
-	text-align: center
-}
-
-p{
-    text-align:center;
+.menu{
+    position:relative;
+    width: 940px;
+    margin: 0 auto;
     
 }
 
-#missao{
-    font-size:20px
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
 }
 
-em strong {
-    color: red;
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
-.itens{
-    font-style: italic;
+nav a{
+    text-transform: uppercase;
+    color: yellow;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
 }
 
-.beneficios{
-    background: #FFFFFF;
-    padding: 20px;
+nav a:hover{
+    color: white;
+    text-decoration: underline;
 }
 
-h2{
-    text-align: center;
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
 }
-
-ul{
+.produtos li{
     display: inline-block;
-    vertical-align: top;
-    width: 50%;
-    margin-right: 15%;
-}
-.imgbeneficios {
+    text-align: center;
     width: 30%;
+    vertical-align: top;
+    background: #f1f1f1;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    /* border-color: #fada0d;
+    border-width: 2px;
+    border-style: solid; (Tudo isso pode ser subirtituido por um único comando: */
+    border: 2px solid #bebdbd;
+    border-radius: 10px;
+}
+
+.produtos li:hover{
+    border-color: rgb(0, 0, 0);
+    
+}
+.produtos li:active {
+    border-color: rgb(246, 246, 47);
+}
+.produtos li:hover h2 {
+    font-size: 34px;
+}
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+
+}
+.produto-descricao{
+    font-size: 18px;
+}
+
+.produto-preco {
+    font-size: 22px;
+    font-weight:bold;
+    margin: 10px 0 0;
+}
+
+
+.produtos img{
+    width: 90%;
+}
+
+footer {
+    text-align: center;
+    background: black;
+    /* background: url("logo.png"); */
+    padding: 40px 0;
+}
+.copyright{
+    color: white;
+    font-size: 13px;
+    margin: 20px 0 0;
 }
