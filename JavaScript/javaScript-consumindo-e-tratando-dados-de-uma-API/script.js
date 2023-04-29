@@ -1,9 +1,5 @@
-console.log('Mandando oi')
+var consultaCEP = fetch('https://viacep.com.br/ws/01001000/json/')
+.then(resposta => resposta.json())
+.then(r => console.log(r));
 
-function mandaMensagem() {
-    console.log('oi')
-    console.log('Tudo bem?')
-    console.log('Bom dia')
-}
-mandaMensagem();
-console.log('Até mais')
+console.log(consultaCEP)
